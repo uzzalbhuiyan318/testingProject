@@ -1,0 +1,145 @@
+@media screen and (max-width: 991px) {
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .menu{
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        left: -100%; /* to hide in the normal state(without clicking in the icon)*/
+        top: 100%;
+        padding-block: 20px;
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
+    .nav-bar{
+        overflow: initial;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .nav-toggle{
+        display: block;
+        margin-right: 10px;
+    }
+
+    .tester{
+        display: none;
+    }
+
+    .example-area{
+        gap: 20px;
+    }
+
+    .example-card{
+        width: calc(50% - 10px);
+        height: 200px;
+    }
+
+    .paneltest-section{
+        margin-block: 0px;
+        padding-block: 20px;
+    }
+
+    .cta-section{
+        padding-block: 30px;
+    }
+
+    .cta{
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    p{
+        font-size: 1rem;
+    }
+
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        text-align: center;
+    }
+
+    .features-card{
+        min-width: calc(50% - 10px);
+    }
+
+    .big-feature, #big-feature-mid{
+        flex-direction: column;
+    }
+
+    .paneltest-area{
+        flex-direction: column-reverse;
+    }
+
+    .paneltest-desc{
+        align-items: center;
+    }
+
+    .paneltest-img{
+        width: 60%;
+    }
+
+    .footer-section{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .link-column{
+        align-items: center;
+    }
+
+    .subfooter-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    :root{
+        --padding-inline-section: 10px;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    h2, h3{
+        font-size: 1.5rem;
+    }
+    
+    .features-header{
+        margin-top: 0px;
+    }
+
+    .features-card {
+        min-width: 100%;
+    }
+
+    .example-card {
+        min-width: 100%;
+    }
+
+    .panel-content{
+        flex-direction: column;
+        gap: 0px;
+        justify-content: flex-start;
+    }
+
+    .subfooter-options{
+        flex-direction: column;
+    }
+
+}
